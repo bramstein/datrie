@@ -1,5 +1,5 @@
 {
-  "name": "dtrie",
+  "name": "datrie",
   "version": "0.1.0",
   "description": "A double array trie implementation",
   "main": "lib/trie.js",
@@ -10,8 +10,8 @@
   "scripts": {
     "test": "mocha --reporter spec"
   },
-  "keywords": ["trie", "double array trie"],
-  "repository": "https://github.com/bramstein/dtrie.git",
+  "keywords": ["trie", "double array trie", "datrie", "dtrie"],
+  "repository": "https://github.com/bramstein/datrie.git",
   "author": "Bram Stein <b.l.stein@gmail.com> (http://www.bramstein.com)",
   "license": "BSD"
 }
