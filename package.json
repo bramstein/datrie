@@ -1,21 +1,17 @@
 {
-  "name": "trie",
+  "name": "dtrie",
   "version": "0.1.0",
   "description": "A double array trie implementation",
   "main": "lib/trie.js",
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "expect.js": "~0.2.0"
-  },
   "devDependencies": {
-    "mocha": "~1.9.0"
+    "mocha": "=1.9.0",
+    "expect.js": "=0.20"
   },
   "scripts": {
     "test": "mocha --reporter spec"
   },
-  "repository": "",
-  "author": "",
+  "keywords": ["trie", "double array trie"],
+  "repository": "https://github.com/bramstein/dtrie.git",
+  "author": "Bram Stein <b.l.stein@gmail.com> (http://www.bramstein.com)",
   "license": "BSD"
 }
