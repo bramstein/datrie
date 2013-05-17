@@ -1,0 +1,21 @@
+{
+  "name": "trie",
+  "version": "0.1.0",
+  "description": "A double array trie implementation",
+  "main": "lib/trie.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "expect.js": "~0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.9.0"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD"
+}
