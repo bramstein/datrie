@@ -161,6 +161,24 @@ describe('Trie', function () {
     });
   });
 
+  describe('remove words from the trie', function () {
+    beforeEach(function () {
+      trie.insert('bachelor#');
+      trie.insert('jar#');
+      trie.insert('badge#');
+      trie.insert('baby#');
+    });
+
+    it('should have the correct state after removing a word', function () {
+      trie.remove('badge#');
+
+      expect(trie.base).to.eql( [4, , 1, -15, -1, 0, 1, , , , , 0, , , -9]);
+      expect(trie.check).to.eql([0, , 7,   3,  3, 0, 1, , , , , 0, , ,  1]);
+      expect(trie.tail).to.eql(['h', 'e', 'l', 'o', 'r', '#', 'r', '#', 'a', 'r', '#', 'g', 'e', '#', 'y', '#']);
+      expect(trie.pos).to.eql(17);
+    });
+  });
+
   describe('insert additional words', function () {
     it('should find the words after inserting them', function () {
       trie.insert('bachelor#');
