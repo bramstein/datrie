@@ -23,6 +23,9 @@ This library implements a double array trie in JavaScript. Nested JavaScript obj
     trie.contains('back#'); // true
     trie.contains('hello'); // false
 
+    trie.remove('back#');
+    trie.contains('back#'); // false
+
 ## Installation
 
     $ npm install dtrie
