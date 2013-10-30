@@ -12,6 +12,6 @@
   },
   "keywords": ["trie", "double array trie", "datrie", "dtrie"],
   "repository": "https://github.com/bramstein/datrie.git",
-  "author": "Bram Stein <b.l.stein@gmail.com> (http://www.bramstein.com)",
+  "authors": ["Bram Stein <b.l.stein@gmail.com> (http://www.bramstein.com)", "J.P. Durham <jpdurham13@gmail.com> (http://www.jpdurham.me)"],
   "license": "BSD"
 }
