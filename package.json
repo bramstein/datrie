@@ -1,6 +1,6 @@
 {
   "name": "datrie",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A double array trie implementation",
   "main": "lib/trie.js",
   "devDependencies": {
