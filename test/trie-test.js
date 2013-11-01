@@ -245,4 +245,34 @@ describe('Trie', function () {
       expect(trie.pos).to.eql(11);
     });
   });
+  
+  describe('additional test case one', function() {
+    it('should correctly identify word membership in trie', function () {
+      trie.insert('abc#');
+      trie.insert('ab#');
+      trie.insert('abb#');
+        
+      expect(trie.contains('abc#')).to.be(true);
+      expect(trie.contains('ab#')).to.be(true);
+      expect(trie.contains('abb#')).to.be(true);
+      expect(trie.contains('abbb#')).to.be(false);
+      expect(trie.contains('a#')).to.be(false);
+    });
+  });
+
+  describe('additional test case two', function() {
+    it('should correctly identify word membership in trie', function () {
+      trie.insert("test#");
+      trie.insert("tests#");
+      trie.insert("testss#");
+      trie.insert("tear#");
+      
+      expect(trie.contains('test#')).to.be(true);
+      expect(trie.contains('tests#')).to.be(true);
+      expect(trie.contains('testss#')).to.be(true);
+      expect(trie.contains('tear#')).to.be(true);
+      expect(trie.contains('testsss#')).to.be(false);
+      expect(trie.contains('tea#')).to.be(false);
+    });
+  });
 });
