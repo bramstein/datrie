@@ -28,7 +28,7 @@ This library implements a double array trie in JavaScript. Nested JavaScript obj
 
 ## Installation
 
-    $ npm install dtrie
+    $ npm install datrie
 
 ## License
 
