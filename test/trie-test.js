@@ -245,13 +245,21 @@ describe('Trie', function () {
       expect(trie.pos).to.eql(11);
     });
   });
-  
+
+  describe('words outside the alphabet', function() {
+    it('should throw an exception', function() {
+      expect(function () {
+        trie.insert('1#');
+      }).to.throwError();
+    });
+  });
+
   describe('additional test case one', function() {
     it('should correctly identify word membership in trie', function () {
       trie.insert('abc#');
       trie.insert('ab#');
       trie.insert('abb#');
-        
+
       expect(trie.contains('abc#')).to.be(true);
       expect(trie.contains('ab#')).to.be(true);
       expect(trie.contains('abb#')).to.be(true);
@@ -266,7 +274,7 @@ describe('Trie', function () {
       trie.insert("tests#");
       trie.insert("testss#");
       trie.insert("tear#");
-      
+
       expect(trie.contains('test#')).to.be(true);
       expect(trie.contains('tests#')).to.be(true);
       expect(trie.contains('testss#')).to.be(true);
